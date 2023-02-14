@@ -107,7 +107,7 @@ class VersionControl(Provider):
         Retrieve the web url, either pages or (eventually) custom.
         """
         parts = self.source_url.split("/")[3:]
-        return "https://%s.%s.io/%s/library.json" % (
+        return "https://%s.pages.%s.rlp.net/%s/library.json" % (
             parts[0],
             self.provider_name,
             "/".join(parts[1:]),
